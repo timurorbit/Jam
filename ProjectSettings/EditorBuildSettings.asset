@@ -18,7 +18,7 @@ EditorBuildSettings:
     path: Assets/TopDownEngine/Demos/Loft3D/Loft3D.unity
     guid: d1174410a185495439298917edf07eea
   - enabled: 1
-    path: Assets/TopDownEngine/Demos/Koala2D/KoalaDungeon.unity
+    path: Assets/KoalaDungeon.unity
     guid: 84badc9c6b6e65a45be4824a7dc1a865
   - enabled: 1
     path: Assets/TopDownEngine/Demos/Koala2D/KoalaRooms.unity
