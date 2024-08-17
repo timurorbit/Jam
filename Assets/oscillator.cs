@@ -12,12 +12,25 @@ public class oscillator : MonoBehaviour
     [SerializeField] private GameObject hexagonPref;
     [SerializeField] private int pushesToCycle = 5;
 
+    public int score;
+
+    [SerializeField]
+    private bool readyToShoot = true;
+
+    [SerializeField] private float levelTransitionTime = 5f;
+
     [SerializeField] private GameObject empty;
     public List<Transform> toInstantiate;
+
+    public ObjectCollector collector;
 
     private int pushes;
     private int iteration;
 
+    private void Start()
+    {
+       collector = FindObjectOfType<ObjectCollector>();
+    }
 
     void Update()
     {
@@ -30,7 +43,7 @@ public class oscillator : MonoBehaviour
 
         // Apply the rotation to the object
         transform.rotation = Quaternion.Euler(0, 0, rotationAngle);
-        if (Input.GetKeyDown("a"))
+        if (Input.GetKeyDown("a") && readyToShoot)
         {
             pushFigure();
         }
@@ -51,6 +64,7 @@ public class oscillator : MonoBehaviour
         if (iteration == 0)
         {
             Instantiate(hexagonPref, transform.position, Quaternion.identity);
+            score++;
         }
         else
         {
@@ -62,6 +76,7 @@ public class oscillator : MonoBehaviour
                     placeToWpawn.position + transform.position,
                     Quaternion.identity,
                     parent.transform);
+                score++;
             }
         }
     }
@@ -69,39 +84,47 @@ public class oscillator : MonoBehaviour
     private void nextlevel()
     {
         iteration++;
+        if (iteration >= collector.levelColliders.Length)
+        {
+            Debug.Log("LevelMax");
+            return;
+        }
+        readyToShoot = false;
+        StartCoroutine(updatePrefabToSpawn());
         updateCamera();
     }
 
     private void updateCamera()
     {
-        updatePrefabToSpawn();
         if (iteration == 1)
         {
-            FindObjectOfType<Camera>().transform.position = new Vector3(0, 1, -20);
+            FindObjectOfType<Camera>().transform.position = new Vector3(0, 1, -30);
             radius = 15;
         }
 
         if (iteration == 2)
         {
-            FindObjectOfType<Camera>().transform.position = new Vector3(0, 1, -40);
+            FindObjectOfType<Camera>().transform.position = new Vector3(0, 1, -60);
             radius = 30;
         }
 
         if (iteration == 3)
         {
-            FindObjectOfType<Camera>().transform.position = new Vector3(0, 1, -60);
+            FindObjectOfType<Camera>().transform.position = new Vector3(0, 1, -100);
             radius = 45;
         }
 
         if (iteration == 4)
         {
-            FindObjectOfType<Camera>().transform.position = new Vector3(0, 1, -80);
+            FindObjectOfType<Camera>().transform.position = new Vector3(0, 1, -150);
             radius = 60;
         }
     }
 
-    private void updatePrefabToSpawn()
+    IEnumerator updatePrefabToSpawn()
     {
-        FindObjectOfType<ObjectCollector>().Collect();
+        yield return new WaitForSeconds(levelTransitionTime);
+        collector.Collect();
+        readyToShoot = true;
     }
 }

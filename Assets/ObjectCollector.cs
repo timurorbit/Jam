@@ -5,18 +5,21 @@ using UnityEngine;
 
 public class ObjectCollector : MonoBehaviour
 {
+    [SerializeField]
+    public CircleCollider2D[] levelColliders;
+
+    [SerializeField] public LayerMask layerMask;
     
-    //todo change area with iterations
-    public CircleCollider2D areaCollider;
+    public int levelIndex;
 
     private void Start()
     {
-        areaCollider = GetComponent<CircleCollider2D>();
+        
     }
 
     public void Collect()
     {
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(areaCollider.transform.position, areaCollider.radius);
+        Collider2D[] colliders = Physics2D.OverlapCircleAll(levelColliders[levelIndex].transform.position, levelColliders[levelIndex].radius, layerMask);
         
         Transform[] transforms = new Transform[colliders.Length];
 
@@ -24,9 +27,14 @@ public class ObjectCollector : MonoBehaviour
         
         foreach (Collider2D collider in colliders)
         {
-            transforms[index++] = collider.transform;
+            if (collider.GetComponent<SmartCollider>())
+            {
+                transforms[index++] = collider.transform;   
+            }
         }
         
         FindObjectOfType<oscillator>().toInstantiate = new List<Transform>(transforms);
+
+        levelIndex++;
     }
 }

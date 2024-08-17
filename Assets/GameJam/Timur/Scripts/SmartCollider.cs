@@ -11,11 +11,11 @@ public class SmartCollider : MonoBehaviour
     {
         DisableMovement();
 
-        SmartFigure smartFigure = GetComponentInParent<SmartFigure>();
-        if (smartFigure)
-        {
-            smartFigure.disableAllColliders();
-        }
+        // SmartFigure smartFigure = GetComponentInParent<SmartFigure>();
+        // if (smartFigure)
+        // {
+        //     smartFigure.disableAllColliders();
+        // }
     }
 
     public void DisableMovement()
@@ -26,7 +26,6 @@ public class SmartCollider : MonoBehaviour
         {
             GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;  
         }
-        
     }
     
     private void OnEnable(){
@@ -40,11 +39,4 @@ public class SmartCollider : MonoBehaviour
             rb.AddForce(directionToOrigin.normalized * speed);
         }
     }
-
-    // private void OnCollisionEnter2D(Collision other)
-    // {
-    //     GetComponent<SphereCollider>().isTrigger = true;
-    //     Rigidbody2D rigidbody2D = GetComponent<Rigidbody2D>();
-    //     rigidbody2D.constraints = RigidbodyConstraints2D.FreezeAll;
-    // }
 }
