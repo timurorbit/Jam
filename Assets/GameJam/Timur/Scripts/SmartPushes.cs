@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SmartPushes : MonoBehaviour
 {
-    [SerializeField] public float pushForce = 100f;
+    [SerializeField] public float pushForce = 200f;
     private int i = 0;
     private List<SmartFigure> list = new List<SmartFigure>();
     void Start()
