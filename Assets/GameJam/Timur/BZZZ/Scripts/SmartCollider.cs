@@ -7,7 +7,7 @@ public class SmartCollider : MonoBehaviour
 {
     public string layerName = "ReadyHoney";
     private float speed = 500f; 
-    private void OnTriggerEnter2D(Collider2D other)
+    protected virtual void OnTriggerEnter2D(Collider2D other)
     {
         DisableMovement();
 

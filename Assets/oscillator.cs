@@ -10,6 +10,7 @@ public class oscillator : MonoBehaviour
     [SerializeField] private float radius;
     [SerializeField] private float angle;
     [SerializeField] private GameObject hexagonPref;
+    [SerializeField] private GameObject honeyPref;
     [SerializeField] private int pushesToCycle = 5;
 
     public int score;
@@ -63,7 +64,7 @@ public class oscillator : MonoBehaviour
     {
         if (iteration == 0)
         {
-            Instantiate(hexagonPref, transform.position, Quaternion.identity);
+            Instantiate(honeyPref, transform.position, Quaternion.identity);
             score++;
         }
         else

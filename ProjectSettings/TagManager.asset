@@ -35,13 +35,13 @@ TagManager:
   - Camera4
   - ReadyHoney
   - PushedHoney
+  - HoneyCheck
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Layer D
+  - Layer C
+  - Layer B
+  - Layer A
   m_SortingLayers:
   - name: Default
     uniqueID: 0
