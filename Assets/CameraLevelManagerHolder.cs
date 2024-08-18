@@ -9,6 +9,7 @@ public class CameraLevelManagerHolder : MonoBehaviour
     public List<GameObject> Levels;
 
     [SerializeField] public List<GameObject> cameras;
+    [SerializeField] public GameObject defaultCamera;
 
     [SerializeField] public List<GameObject> Coalas;
     [SerializeField] public List<Transform> theirPositions;
@@ -25,6 +26,7 @@ public class CameraLevelManagerHolder : MonoBehaviour
     {
         CameraLevelManager holder = FindObjectOfType<CameraLevelManager>();
         holder.cameras = cameras;
+        holder.defaultCamera = defaultCamera;
         holder.Levels = Levels;
         holder.Coalas = Coalas;
         holder.theirPositions = theirPositions;
