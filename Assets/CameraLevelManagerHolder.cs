@@ -17,6 +17,8 @@ public class CameraLevelManagerHolder : MonoBehaviour
 
     [SerializeField] public List<GameObject> Enemies;
 
+    [SerializeField] public List<GameObject> borders;
+
     private void OnEnable()
     {
         managerParams();
@@ -31,6 +33,7 @@ public class CameraLevelManagerHolder : MonoBehaviour
         holder.Coalas = Coalas;
         holder.theirPositions = theirPositions;
         holder.Enemies = Enemies;
+        holder.borders = borders;
         holder.recreateLevel();
     }
 }

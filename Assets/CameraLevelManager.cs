@@ -17,6 +17,7 @@ public class CameraLevelManager : MonoBehaviour
 
     [SerializeField] public List<GameObject> Enemies;
     public GameObject defaultCamera;
+    public List<GameObject> borders;
 
     private void OnEnable()
     {
@@ -82,8 +83,25 @@ public class CameraLevelManager : MonoBehaviour
         {
             Levels[i].SetActive(true);
             cameras[i].SetActive(true);
+            if (i == 1)
+            {
+                cameras[i+1].SetActive(true);
+            }
             i++;
         }
+        
+        if (currentlevel == 1)
+        {
+            recreateBorders();
+        }
+    }
+
+    private void recreateBorders()
+    {
+        borders[0].gameObject.transform.localPosition = new Vector3(-8.8f, -1f, 0);
+        borders[1].gameObject.transform.localPosition = new Vector3(5.28f,-1f,0);
+        borders[2].gameObject.transform.localPosition = new Vector3(-8.8f,-1f,0);
+        borders[3].gameObject.transform.localPosition = new Vector3(5.28f,-1f,0);
     }
 
     private void positionCamers(int currentlevel)
@@ -114,7 +132,7 @@ public class CameraLevelManager : MonoBehaviour
             camera1.rect = new Rect(0, .5f, .5f, .5f);
             camera2.rect = new Rect(.5f, .5f, .5f, .5f);
             camera3.rect = new Rect(0, 0, .5f, .5f);
-            camera4.rect = new Rect(0, 0, 0, 0);
+            camera4.rect = new Rect(.5f, 0, .5f, .5f);
         }
 
         if (currentlevel == 3)
