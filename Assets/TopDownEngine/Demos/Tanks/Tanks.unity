@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 0.147
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.0048224167, g: 0.07126237, b: 0.14699987, a: 0.147}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &4
 LightmapSettings:
@@ -11394,7 +11393,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ConfineMode: 1
-  m_BoundingVolume: {fileID: 0}
+  m_BoundingVolume: {fileID: 1392788253}
   m_BoundingShape2D: {fileID: 0}
   m_ConfineScreenEdges: 1
   m_Damping: 0

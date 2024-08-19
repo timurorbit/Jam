@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/GameJam/Timur/MainMenu.unity
+    guid: ade8be70c5ddb4d43bef2daae1cf3ef6
+  - enabled: 1
+    path: Assets/GameJam/Timur/Story.unity
+    guid: 6cd7e1970a005401c8d04a807c50f549
+  - enabled: 1
     path: Assets/GameJam/Timur/KoalaDungeonScaleSpikes2.unity
     guid: 2a827f5d717431a4187eab09be3bee78
   - enabled: 1
