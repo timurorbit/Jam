@@ -6929,7 +6929,7 @@ RectTransform:
   m_GameObject: {fileID: 129941781}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.40474397, y: 0.40474397, z: 0.40474397}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 723090628}
@@ -6937,7 +6937,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -543, y: 491}
+  m_AnchoredPosition: {x: -2, y: 109}
   m_SizeDelta: {x: 300, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &129941783
@@ -18763,7 +18763,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 513287713}
-  - component: {fileID: 513287712}
+  - component: {fileID: 513287714}
   m_Layer: 0
   m_Name: BackgroundMusic
   m_TagString: Untagged
@@ -18771,21 +18771,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &513287712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 513287711}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eae4cb8f997d6c744a6172cbaa8cb264, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SoundClip: {fileID: 8300000, guid: 343b8a85db405d743a631b1b0785d03a, type: 3}
-  Loop: 1
-  ID: 255
 --- !u!4 &513287713
 Transform:
   m_ObjectHideFlags: 0
@@ -18801,6 +18786,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &513287714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513287711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81e1435832c5b3544a756992b7438efb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SoundClips:
+  - {fileID: 8300000, guid: 96ff13c4d6415aa4495339781a999d75, type: 3}
+  - {fileID: 8300000, guid: 87e557f4a3aefb642bc48a8909d7df55, type: 3}
+  - {fileID: 8300000, guid: 0c55b950ba2fb4c4c81d35d7bc2499a5, type: 3}
+  - {fileID: 8300000, guid: 7da5a28e060f1d64eb24908ed375b81c, type: 3}
+  CameraLevelManager: {fileID: 1355455496}
+  Loop: 1
+  ID: 255
 --- !u!1001 &524530745
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -62547,7 +62552,7 @@ RectTransform:
   m_GameObject: {fileID: 1379009023}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.34922442, y: 0.34922442, z: 0.34922442}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2144854435}
@@ -62555,7 +62560,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -221, y: 491}
+  m_AnchoredPosition: {x: -1, y: 67}
   m_SizeDelta: {x: 300, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1379009025
