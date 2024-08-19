@@ -19,6 +19,23 @@ public class CameraLevelManagerHolder : MonoBehaviour
 
     [SerializeField] public List<GameObject> borders;
 
+    private CameraLevelManager holder;
+
+    private int numberOfEnemies;
+    
+    public int NumberOfEnemies
+    {
+        get { return numberOfEnemies; }
+        set
+        {
+            numberOfEnemies = value;
+            if (numberOfEnemies == 0)
+            {
+                holder.launchNextLevel();
+            }
+        }
+    }
+
     private void OnEnable()
     {
         managerParams();
@@ -26,7 +43,7 @@ public class CameraLevelManagerHolder : MonoBehaviour
 
     public void managerParams()
     {
-        CameraLevelManager holder = FindObjectOfType<CameraLevelManager>();
+        holder = FindObjectOfType<CameraLevelManager>();
         holder.cameras = cameras;
         holder.defaultCamera = defaultCamera;
         holder.Levels = Levels;

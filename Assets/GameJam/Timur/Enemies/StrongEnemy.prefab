@@ -10350,6 +10350,7 @@ GameObject:
   - component: {fileID: 6709848998016573974}
   - component: {fileID: 3212453337702398298}
   - component: {fileID: 9157588166893849933}
+  - component: {fileID: 7528504432176722149}
   m_Layer: 13
   m_Name: StrongEnemy
   m_TagString: Enemy
@@ -11114,6 +11115,18 @@ MonoBehaviour:
   Label: 
   AfterTimeMin: 2
   AfterTimeMax: 1
+--- !u!114 &7528504432176722149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7353420833189766771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28830001b98ee7b45a945868d61de77e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &8102110273201447968
 GameObject:
   m_ObjectHideFlags: 0

@@ -254,8 +254,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4815625643620394}
   - component: {fileID: 61883911986129466}
-  - component: {fileID: 114448246731977436}
   - component: {fileID: 114538689300665806}
+  - component: {fileID: 5018485199169222336}
   m_Layer: 0
   m_Name: KoalaSwordBigPicker
   m_TagString: Untagged
@@ -326,29 +326,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.6, y: 1.6}
   m_EdgeRadius: 0
---- !u!114 &114448246731977436
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1660504258585598}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1feff4042ae759c49a290443b9bfdd71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PickedMMFeedbacks: {fileID: 2652594617224637180}
-  DisableColliderOnPick: 0
-  DisableObjectOnPick: 1
-  DisableDelay: 0
-  DisableModelOnPick: 0
-  DisableTargetObjectOnPick: 0
-  TargetObjectToDisable: {fileID: 0}
-  TargetObjectDisableDelay: 1
-  Model: {fileID: 0}
-  RequireCharacterComponent: 1
-  RequirePlayerType: 1
 --- !u!114 &114538689300665806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -367,6 +344,32 @@ MonoBehaviour:
   PickableIfInventoryIsFull: 0
   DisableObjectWhenDepleted: 0
   RequirePlayerTag: 1
+--- !u!114 &5018485199169222336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1660504258585598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9185055eec18fda48904eb50c1307892, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PickedMMFeedbacks: {fileID: 2652594617224637180}
+  DisableColliderOnPick: 0
+  DisableObjectOnPick: 1
+  DisableDelay: 0
+  DisableModelOnPick: 0
+  DisableTargetObjectOnPick: 0
+  TargetObjectToDisable: {fileID: 0}
+  TargetObjectDisableDelay: 1
+  Model: {fileID: 0}
+  RequireCharacterComponent: 1
+  RequirePlayerType: 1
+  WeaponToGive: {fileID: 114594623923584052, guid: 52f25bec0441b914bbe263b900b310ee,
+    type: 3}
+  HandleWeaponID: 1
 --- !u!1 &6934675748652632133
 GameObject:
   m_ObjectHideFlags: 0

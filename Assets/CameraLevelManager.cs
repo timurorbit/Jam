@@ -46,12 +46,8 @@ public class CameraLevelManager : MonoBehaviour
         }
         else
         {
-            Debug.Log("you win");
-        }
-
-        if (currentIndex > Levels.Count)
-        {
-            Debug.Log("you win");
+            currentIndex = 0;
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
 
