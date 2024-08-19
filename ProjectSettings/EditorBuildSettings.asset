@@ -6,6 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/GameJam/Timur/MainMenu.unity
+    guid: ade8be70c5ddb4d43bef2daae1cf3ef6
+  - enabled: 1
+    path: Assets/GameJam/Timur/Story.unity
+    guid: 6cd7e1970a005401c8d04a807c50f549
+  - enabled: 1
     path: Assets/TopDownEngine/Demos/StartScreen/StartScreen.unity
     guid: 52360e1567e3fee418407abdfd132d73
   - enabled: 1
