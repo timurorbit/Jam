@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.PostProcessing;
 using UnityEngine.SceneManagement;
 
 public class CameraLevelManager : MonoBehaviour
@@ -113,6 +114,8 @@ public class CameraLevelManager : MonoBehaviour
 
         if (currentlevel == 0)
         {
+            PostProcessLayer layer = camera1.GetComponent<PostProcessLayer>();
+            layer.finalBlitToCameraTarget = false;
             camera1.rect = new Rect(0, 0, 1, 1);
             camera2.rect = new Rect(0, 0, 0, 0);
             camera3.rect = new Rect(0, 0, 0, 0);
