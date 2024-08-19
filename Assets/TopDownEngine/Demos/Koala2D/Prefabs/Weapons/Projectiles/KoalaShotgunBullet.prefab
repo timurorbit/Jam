@@ -152,7 +152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TargetLayerMask:
     serializedVersion: 2
-    m_Bits: 8960
+    m_Bits: 1280
   Owner: {fileID: 0}
   TriggerFilter: 195
   MinDamageCaused: 10
@@ -202,7 +202,7 @@ MonoBehaviour:
   Mode: 0
   ObstaclesLayerMask:
     serializedVersion: 2
-    m_Bits: 8448
+    m_Bits: 256
   SkinWidth: 0.1
   RepositionRigidbodyIfHitTrigger: 1
   RepositionRigidbodyIfHitNonTrigger: 1
@@ -5077,7 +5077,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 3f6b0a334e5a4b44cab8e9afcdf6899a, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -5204,7 +5203,7 @@ SpriteRenderer:
   m_SortingLayer: 4
   m_SortingOrder: 10
   m_Sprite: {fileID: 21300014, guid: 75df1bb8b302ceb4a9230d70d1b2e97e, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10072,7 +10071,6 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
   - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
@@ -15032,7 +15030,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 6585f21f352bd2d428e39c0353cdc7ae, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -15528,7 +15525,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2833110125873829573
 Transform:
   m_ObjectHideFlags: 0
@@ -15551,7 +15548,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8832793643731794437}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6da43522623d4704e979466dc7650b65, type: 3}
   m_Name: 
@@ -15653,7 +15650,7 @@ MonoBehaviour:
     - rid: 0
       type: {class: MMF_Particles, ns: MoreMountains.Feedbacks, asm: MoreMountains.Tools}
       data:
-        Active: 1
+        Active: 0
         UniqueID: -50450341
         Label: Particles
         ChannelMode: 0
@@ -15739,7 +15736,7 @@ MonoBehaviour:
     - rid: 1
       type: {class: MMF_Sound, ns: MoreMountains.Feedbacks, asm: MoreMountains.Tools}
       data:
-        Active: 1
+        Active: 0
         UniqueID: -139677964
         Label: Sound
         ChannelMode: 0

@@ -353,7 +353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b3a751d5ea8b434ba9cba76aad53dce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  AimControl: 3
+  AimControl: 1
   AimControlActive: 1
   RotationMode: 0
   WeaponRotationSpeed: 0
