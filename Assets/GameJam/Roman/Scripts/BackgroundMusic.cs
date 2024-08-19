@@ -14,6 +14,7 @@ namespace MoreMountains.TopDownEngine
 		/// the background music
 		[Tooltip("the audio clip to use as background music")]
 		public List<AudioClip> SoundClips;
+		public AudioClip Transition;
 		// public CameraLevelManager CameraLevelManager;
 		/// whether or not the music should loop
 		[Tooltip("whether or not the music should loop")]
@@ -21,6 +22,7 @@ namespace MoreMountains.TopDownEngine
 		/// the ID to create this background music with
 		[Tooltip("the ID to create this background music with")]
 		public int ID = 255;
+		int CurrentLevel = 0;
 
 
 		/// <summary>
@@ -28,14 +30,27 @@ namespace MoreMountains.TopDownEngine
 		/// </summary>
 		protected virtual void Start()
 		{
-			MMSoundManagerPlayOptions options = MMSoundManagerPlayOptions.Default;
+			int levelIndex = FindObjectOfType<CameraLevelManager>().currentIndex;
+
+			if (levelIndex != CurrentLevel)
+			{
+                MMSoundManagerPlayOptions transitionOptions = MMSoundManagerPlayOptions.Default;
+                transitionOptions.ID = ID;
+                transitionOptions.Loop = false;
+                transitionOptions.Location = Vector3.zero;
+				transitionOptions.MmSoundManagerTrack = MMSoundManager.MMSoundManagerTracks.Sfx;
+				MMSoundManagerSoundPlayEvent.Trigger(Transition, transitionOptions);
+				CurrentLevel = levelIndex;
+				Debug.Log("Play transition");
+            }
+
+            MMSoundManagerPlayOptions options = MMSoundManagerPlayOptions.Default;
 			options.ID = ID;
 			options.Loop = Loop;
 			options.Location = Vector3.zero;
 			options.MmSoundManagerTrack = MMSoundManager.MMSoundManagerTracks.Music;
 
-			Debug.Log(FindObjectOfType<CameraLevelManager>().currentIndex);
-			MMSoundManagerSoundPlayEvent.Trigger(SoundClips[FindObjectOfType<CameraLevelManager>().currentIndex], options);
+			MMSoundManagerSoundPlayEvent.Trigger(SoundClips[levelIndex], options);
 		}
 	}
 }
