@@ -10662,7 +10662,7 @@ MonoBehaviour:
   BlockingWeaponStates: 
   InitialWeapon: {fileID: 114594623923584052, guid: 2ca3e89c9456b654a935b03e98998c51,
     type: 3}
-  CanPickupWeapons: 1
+  CanPickupWeapons: 0
   WeaponUseFeedback: {fileID: 0}
   WeaponAttachment: {fileID: 1877183495108352940}
   ProjectileSpawn: {fileID: 0}
