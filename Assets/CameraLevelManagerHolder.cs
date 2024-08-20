@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using MoreMountains.Tools;
 using UnityEngine;
 
 public class CameraLevelManagerHolder : MonoBehaviour
@@ -19,6 +20,9 @@ public class CameraLevelManagerHolder : MonoBehaviour
 
     [SerializeField] public List<GameObject> borders;
 
+    [SerializeField]
+    public AudioClip sizeSound;
+
     private CameraLevelManager holder;
 
     private int numberOfEnemies;
@@ -31,6 +35,9 @@ public class CameraLevelManagerHolder : MonoBehaviour
             numberOfEnemies = value;
             if (numberOfEnemies == 0)
             {
+                MMSoundManagerPlayOptions options = MMSoundManagerPlayOptions.Default;
+                options.Persistent = true;
+                MMSoundManagerSoundPlayEvent.Trigger(sizeSound, options);
                 holder.launchNextLevel();
             }
         }

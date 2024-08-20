@@ -20627,7 +20627,7 @@ MonoBehaviour:
     - rid: 4
       type: {class: MMF_Sound, ns: MoreMountains.Feedbacks, asm: MoreMountains.Tools}
       data:
-        Active: 0
+        Active: 1
         UniqueID: 284576125
         Label: Sound
         ChannelMode: 0
@@ -20698,7 +20698,7 @@ MonoBehaviour:
           ButtonText: Automatic Shaker Setup
         Owner: {fileID: 1710523558594538418}
         DebugActive: 0
-        Sfx: {fileID: 8300000, guid: 3da2b314bd1a97343bae14188dcc5f30, type: 3}
+        Sfx: {fileID: 8300000, guid: ebf8e05ad4ddef047ad66101ee50a1f1, type: 3}
         RandomSfx: []
         TestPlayButton:
           ButtonText: Debug Play Sound
@@ -20708,10 +20708,10 @@ MonoBehaviour:
         PoolSize: 10
         UseLegacyEventsMode: 0
         StopSoundOnFeedbackStop: 1
-        MinVolume: 1
-        MaxVolume: 1
-        MinPitch: 1
-        MaxPitch: 1
+        MinVolume: 0.61
+        MaxVolume: 0.71
+        MinPitch: 0.91
+        MaxPitch: 1.18
         SfxAudioMixerGroup: {fileID: 0}
         Priority: 128
         PanStereo: 0

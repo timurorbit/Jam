@@ -586,7 +586,7 @@ MonoBehaviour:
           ButtonText: Automatic Shaker Setup
         Owner: {fileID: 2652594617224637180}
         DebugActive: 0
-        Sfx: {fileID: 8300000, guid: d8ea448bae39d4146b98a9953a270f1b, type: 3}
+        Sfx: {fileID: 8300000, guid: ba3c9452f11d8214ca271b0b2ac2fe37, type: 3}
         RandomSfx: []
         TestPlayButton:
           ButtonText: Debug Play Sound
@@ -596,10 +596,10 @@ MonoBehaviour:
         PoolSize: 10
         UseLegacyEventsMode: 0
         StopSoundOnFeedbackStop: 1
-        MinVolume: 1
-        MaxVolume: 1
-        MinPitch: 1
-        MaxPitch: 1
+        MinVolume: 1.68
+        MaxVolume: 1.84
+        MinPitch: 0.85
+        MaxPitch: 1.12
         SfxAudioMixerGroup: {fileID: 0}
         Priority: 128
         PanStereo: 0
