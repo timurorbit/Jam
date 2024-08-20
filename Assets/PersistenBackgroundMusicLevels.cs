@@ -59,6 +59,11 @@ public class PersistenBackgroundMusicLevels : PersistentBackgroundMusic
         options.MmSoundManagerTrack = MMSoundManager.MMSoundManagerTracks.Music;
         options.Persistent = true;
 
+        if (audioClip.Equals(final))
+        {
+            options.Loop = false;
+        }
+
         MMSoundManagerSoundPlayEvent.Trigger(audioClip, options);
         previous = options;
     }

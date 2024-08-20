@@ -229,8 +229,8 @@ MonoBehaviour:
   TargetLayerMask:
     serializedVersion: 2
     m_Bits: 1280
-  MinDamageCaused: 20
-  MaxDamageCaused: 20
+  MinDamageCaused: 15
+  MaxDamageCaused: 15
   Knockback: 1
   KnockbackForce: {x: 500, y: 500, z: 0}
   KnockbackDirection: 0

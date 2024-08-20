@@ -257,8 +257,8 @@ MonoBehaviour:
         SequentialOrderHoldCooldownDuration: 2
         RandomUnique: 0
         SoundDataSO: {fileID: 0}
-        MinVolume: 0.09
-        MaxVolume: 0.16
+        MinVolume: 0.37
+        MaxVolume: 0.41
         MinPitch: 0.94
         MaxPitch: 1.1
         MmSoundManagerTrack: 0
@@ -1615,6 +1615,7 @@ GameObject:
   - component: {fileID: 2283159382339502963}
   - component: {fileID: 391279031922379305}
   - component: {fileID: 6302656962658273880}
+  - component: {fileID: 3044843473007493413}
   m_Layer: 10
   m_Name: BaseCoala
   m_TagString: Player
@@ -1855,7 +1856,7 @@ MonoBehaviour:
   InputAuthorized: 1
   AnalogInput: 0
   ScriptDrivenInput: 0
-  WalkSpeed: 6
+  WalkSpeed: 9
   ShouldSetMovement: 1
   IdleThreshold: 0.05
   Acceleration: 10
@@ -2416,6 +2417,18 @@ MonoBehaviour:
   TestMaxHealth: 100
   TestCurrentHealth: 25
   TestUpdateHealthButton: 0
+--- !u!114 &3044843473007493413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664130683819429216}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47beac71163c22a4f90c2357e49623df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1667862189782006728
 GameObject:
   m_ObjectHideFlags: 0
@@ -19022,7 +19035,7 @@ MonoBehaviour:
     - rid: 4
       type: {class: MMF_FreezeFrame, ns: MoreMountains.Feedbacks, asm: MoreMountains.Tools}
       data:
-        Active: 0
+        Active: 1
         UniqueID: -550240603
         Label: Freeze Frame
         ChannelMode: 0
@@ -19187,7 +19200,7 @@ MonoBehaviour:
             outWeight: 0
           - serializedVersion: 3
             time: 0.5
-            value: 1
+            value: 0.5384598
             inSlope: 0
             outSlope: 0
             tangentMode: 0

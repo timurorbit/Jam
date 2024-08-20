@@ -15,6 +15,8 @@ public class CameraLevelManager : MonoBehaviour
     [SerializeField] public List<GameObject> Coalas;
     [SerializeField] public List<Transform> theirPositions;
 
+    private bool isLoading;
+
 
     [SerializeField] public List<GameObject> Enemies;
     public GameObject defaultCamera;
@@ -46,19 +48,31 @@ public class CameraLevelManager : MonoBehaviour
         }
         else
         {
-            loadNewScene();
+            if (!isLoading)
+            {
+                StartCoroutine(loadNewScene());  
+            }
         }
     }
 
-    private void loadNewScene()
+    public IEnumerator loadNewScene()
     {
+        isLoading = true;
+        yield return new WaitForSeconds(.4f);
         currentIndex = 0;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        isLoading = false;
     }
 
-    public void died()
+    public IEnumerator died()
     {
-        StartCoroutine(loadLevel());
+        if (!isLoading)
+        {
+            isLoading = true;
+            yield return new WaitForSeconds(.8f);
+            StartCoroutine(loadLevel());
+            isLoading = false;
+        }
     }
 
     private IEnumerator loadLevel()
