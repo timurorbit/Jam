@@ -46,9 +46,14 @@ public class CameraLevelManager : MonoBehaviour
         }
         else
         {
-            currentIndex = 0;
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            loadNewScene();
         }
+    }
+
+    private void loadNewScene()
+    {
+        currentIndex = 0;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
     public void died()

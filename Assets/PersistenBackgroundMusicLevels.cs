@@ -10,6 +10,7 @@ public class PersistenBackgroundMusicLevels : PersistentBackgroundMusic
     public AudioClip level1;
     public AudioClip level2;
     public AudioClip level3;
+    public AudioClip final;
 
     private string previousScene;
 
@@ -39,6 +40,10 @@ public class PersistenBackgroundMusicLevels : PersistentBackgroundMusic
         else if ("Level 3".Equals(arg0.name))
         {
             ChangeSoundtrack(level3);
+        }
+        else if ("Ending".Equals(arg0.name))
+        {
+            ChangeSoundtrack(final);
         }
 
         previousScene = arg0.name;
