@@ -193,7 +193,7 @@ MonoBehaviour:
   CharacterDimension: 0
   CharacterType: 1
   PlayerID: 
-  CharacterAnimator: {fileID: 1369263385024164661}
+  CharacterAnimator: {fileID: 3653768397053134678}
   UseDefaultMecanim: 1
   RunAnimatorSanityChecks: 0
   DisableAnimatorLogs: 1
@@ -385,8 +385,8 @@ MonoBehaviour:
   ImmuneToKnockback: 0
   ImmuneToKnockbackIfZeroDamage: 0
   KnockbackForceMultiplier: 1
-  DestroyOnDeath: 0
-  DelayBeforeDestruction: 0
+  DestroyOnDeath: 1
+  DelayBeforeDestruction: 0.3
   PointsWhenDestroyed: 0
   RespawnAtInitialLocation: 0
   DisableControllerOnDeath: 1
@@ -403,7 +403,7 @@ MonoBehaviour:
   UseMaterialPropertyBlocks: 0
   MasterHealth: {fileID: 0}
   TargetDamageResistanceProcessor: {fileID: 0}
-  TargetAnimator: {fileID: 0}
+  TargetAnimator: {fileID: 3653768397053134678}
   DisableAnimatorLogs: 1
 --- !u!114 &9144484308993608099
 MonoBehaviour:
@@ -1405,8 +1405,8 @@ ParticleSystem:
     startColor:
       serializedVersion: 2
       minMaxState: 2
-      minColor: {r: 0.091274075, g: 0.08735315, b: 0.122641504, a: 1}
-      maxColor: {r: 0.26666668, g: 0.2509804, b: 0.3921569, a: 1}
+      minColor: {r: 0.09982429, g: 0.3490566, b: 0.044455323, a: 1}
+      maxColor: {r: 0.618052, g: 0.9150943, b: 0.31510323, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -6040,7 +6040,6 @@ ParticleSystemRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 90b4a85560efd8044ba3c7c82bef32f5, type: 2}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6120,7 +6119,7 @@ Transform:
   m_GameObject: {fileID: 5532938958362111406}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.38, z: 0}
+  m_LocalPosition: {x: -4.3, y: -2.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7401,7 +7400,7 @@ ParticleSystem:
       maxColor: {r: 1, g: 1, b: 1, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0, g: 0, b: 0, a: 1}
+        key0: {r: 0.6497755, g: 0.9150943, b: 0.45323068, a: 1}
         key1: {r: 1, g: 1, b: 1, a: 1}
         key2: {r: 0, g: 0, b: 0, a: 0}
         key3: {r: 0, g: 0, b: 0, a: 0}
@@ -7426,7 +7425,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
-        m_ColorSpace: -1
+        m_ColorSpace: 0
         m_NumColorKeys: 2
         m_NumAlphaKeys: 3
       minGradient:
@@ -10961,7 +10960,7 @@ Transform:
   m_GameObject: {fileID: 5974167274520142971}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.002, z: 0}
+  m_LocalPosition: {x: 0, y: -0.61, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -11029,9 +11028,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8031147961171343329}
   - component: {fileID: 5429222446979708129}
-  - component: {fileID: 1369263385024164661}
+  - component: {fileID: 3653768397053134678}
   m_Layer: 13
-  m_Name: NinjaModel
+  m_Name: SlimeModel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11047,7 +11046,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0.625, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7948569147162550945}
@@ -11095,7 +11094,7 @@ SpriteRenderer:
   m_SortingLayerID: 47421343
   m_SortingLayer: 4
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: aba7b5c63d9ec304b89edc574d32d4bd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 98a505c13f0dfb14fbc08389d0c206aa, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -11106,7 +11105,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &1369263385024164661
+--- !u!95 &3653768397053134678
 Animator:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -11116,7 +11115,7 @@ Animator:
   m_GameObject: {fileID: 6080277144227808274}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 22100000, guid: d7409d88ace7ca245b60e0240311dba4, type: 2}
+  m_Controller: {fileID: 9100000, guid: 96c4fbf8524fc9a4f9269809c1385ab2, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

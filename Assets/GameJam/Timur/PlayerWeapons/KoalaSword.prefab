@@ -93,7 +93,7 @@ MonoBehaviour:
   WeaponAnimationID: 0
   IdleAnimationParameter: 
   StartAnimationParameter: Slash1
-  DelayBeforeUseAnimationParameter: 
+  DelayBeforeUseAnimationParameter: Attacking
   SingleUseAnimationParameter: 
   UseAnimationParameter: 
   DelayBetweenUsesAnimationParameter: 
@@ -187,7 +187,7 @@ MonoBehaviour:
   WeaponAnimationID: 0
   IdleAnimationParameter: 
   StartAnimationParameter: Slash2
-  DelayBeforeUseAnimationParameter: 
+  DelayBeforeUseAnimationParameter: Attacking
   SingleUseAnimationParameter: 
   UseAnimationParameter: 
   DelayBetweenUsesAnimationParameter: 
@@ -281,7 +281,7 @@ MonoBehaviour:
   WeaponAnimationID: 0
   IdleAnimationParameter: 
   StartAnimationParameter: Slash3
-  DelayBeforeUseAnimationParameter: 
+  DelayBeforeUseAnimationParameter: Attacking
   SingleUseAnimationParameter: 
   UseAnimationParameter: 
   DelayBetweenUsesAnimationParameter: 

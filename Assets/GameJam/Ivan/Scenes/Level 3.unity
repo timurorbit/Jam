@@ -37882,6 +37882,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: MageBossEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 2943561936771999416, guid: fb862870fd84f29478874c3d6213ef72,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.512
+      objectReference: {fileID: 0}
+    - target: {fileID: 3290421055743534431, guid: fb862870fd84f29478874c3d6213ef72,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.36
+      objectReference: {fileID: 0}
     - target: {fileID: 3375865951652231924, guid: fb862870fd84f29478874c3d6213ef72,
         type: 3}
       propertyPath: m_LocalPosition.x
