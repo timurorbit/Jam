@@ -23,6 +23,7 @@ public class MainMenu : MonoBehaviour{
     public void ShowNextBubble(){
         if (i < bubblesGameObjects.Count){
             bubblesGameObjects[i].SetActive(true);
+            bubblesGameObjects[i].transform.GetChild(0).gameObject.SetActive(true);
             StartCoroutine(FadeIn());
             
             i++;
