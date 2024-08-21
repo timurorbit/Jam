@@ -6203,6 +6203,7 @@ MonoBehaviour:
   - {fileID: 1057254056}
   - {fileID: 1175951590}
   - {fileID: 1182142822}
+  sizeSound: {fileID: 0}
 --- !u!1001 &72836956
 PrefabInstance:
   m_ObjectHideFlags: 0
