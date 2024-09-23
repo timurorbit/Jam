@@ -48,10 +48,7 @@ public class CameraLevelManager : MonoBehaviour
         }
         else
         {
-            if (!isLoading)
-            {
-                StartCoroutine(loadNewScene());  
-            }
+            StartCoroutine(loadNewScene());
         }
     }
 
@@ -68,10 +65,8 @@ public class CameraLevelManager : MonoBehaviour
     {
         if (!isLoading)
         {
-            isLoading = true;
             yield return new WaitForSeconds(.8f);
             StartCoroutine(loadLevel());
-            isLoading = false;
         }
     }
 
